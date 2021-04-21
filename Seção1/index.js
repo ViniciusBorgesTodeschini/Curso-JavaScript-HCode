@@ -28,5 +28,13 @@ console.log(resultado);
 let calc2 = (x1,x2, operator) => {
     return eval(`${x1}${operator}${x2}`);
 }
- */
+*/
+
+window.addEventListener('focus',event => {
+    console.log("focus");
+})
+
+document.addEventListener('click',event => {
+    console.log("click");
+})
 
