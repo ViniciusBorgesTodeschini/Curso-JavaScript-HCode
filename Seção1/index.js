@@ -55,6 +55,7 @@ carros.forEach(function(value,index){
 });
 
 //Classes
+//Forma antiga para criar classes
 let celular = function(){
     this.cor = "prata"; //criando um atributo
 
@@ -69,6 +70,7 @@ let objeto = new celular();
 console.log(objeto.cor);
 console.log(objeto.ligar());
 
+//Nova forma ECMA Script para criar classes
 class celular2 {
     constructor(){
         this.cor = "prata"; //criando um atributo    
