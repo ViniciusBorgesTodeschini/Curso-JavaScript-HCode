@@ -52,4 +52,34 @@ console.log(carros[0]); //retorna o valor a primeira posição do array
 
 carros.forEach(function(value,index){ 
     console.log(index,value);
-})
+});
+
+//Classes
+let celular = function(){
+    this.cor = "prata"; //criando um atributo
+
+    this.ligar = function () //criando um método
+    {
+        console.log("uma ligação");
+        return "ligando";
+    }
+}
+
+let objeto = new celular();
+console.log(objeto.cor);
+console.log(objeto.ligar());
+
+class celular2 {
+    constructor(){
+        this.cor = "prata"; //criando um atributo    
+    }
+
+    ligar () {
+        console.log("uma ligação");
+        return "ligando";        
+    }
+}
+
+let objeto2 = new celular2();
+console.log(objeto2.cor);
+console.log(objeto2.ligar());
